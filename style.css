@@ -29,8 +29,20 @@ body {
     width: 350px;
 }
 
+.progress-container ::before {
+    content: '';
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    max-width: 100%;
+    z-index: -1;
+}
+
 .progress {
-    background-color: rgb(118, 139, 160, .70);
+    background-color: rgba(49, 76, 102, 0.8);
     position: absolute;
     top: 50%;
     left: 0;
@@ -38,4 +50,22 @@ body {
     height: 4px;
     width: 50%;
     z-index: -1;
+    transition: .4s ease;
 }
+
+.circle {
+    background-color: snow;
+    color: steelblue;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(137, 149, 153);
+    transition: .4s ease;
+}
+
+.circle.active {
+    border-color: lightblue;
+}
+
