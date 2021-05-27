@@ -18,11 +18,29 @@ body {
 
 .container {
     background-color: lightsalmon;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
 }
 
 container.show-nav {
     transform: rotate(-20);
-    transform-origin: top left;
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: whitesmoke;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
     transition: transform 0.5s linear;
 }
 
