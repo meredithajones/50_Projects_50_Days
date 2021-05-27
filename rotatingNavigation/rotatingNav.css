@@ -13,7 +13,11 @@ body {
 }
 
 .bun {
-    height: 400px;
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
 }
 
 .container {
@@ -25,8 +29,8 @@ body {
     padding: 50px;
 }
 
-container.show-nav {
-    transform: rotate(-20);
+.container.show-nav {
+    transform: rotate(-20deg);
 }
 
 .circle-container {
@@ -46,6 +50,7 @@ container.show-nav {
 
 .circle button {
     position: absolute;
+    cursor: pointer;
     top: 50%;
     left: 50%;
     height: 100px;
@@ -68,4 +73,24 @@ container.show-nav {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 0;
+
+}
+
+.content small {
+    color: #555;
+    font-style: italic;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.5;
 }
