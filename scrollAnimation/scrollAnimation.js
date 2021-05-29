@@ -12,6 +12,13 @@ function checkBoxes() {
     // providing info about the size of element and its 
     //position relative to the viewport.
     boxes.forEach(box =>{
-        const boxTop = box.getBoundingClientRect()
+        const boxTop = box.getBoundingClientRect().top 
+
+        if(boxTop < triggerBottom) {
+            box.classList.add('show') 
+        } else {
+            box.classList.remove('show');
+        }
+
     })
 }
