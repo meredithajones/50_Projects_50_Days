@@ -30,5 +30,21 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-    transform: translateX(200%);
+    transform: translateX(250%);
+    transition: transform 0.5s ease;
+}
+
+/* Using a psudo selector to alternate boxes coming in
+from the left and the right */
+.box:nth-of-type(even) {
+    transform: translateX(-250%);
+}
+
+.box.show {
+    transform: translateX(0);
+
+}
+
+.box h2 {
+    font-size: 45px;
 }
