@@ -6,12 +6,29 @@
 }
 
 body {
+    background-image: linear-gradient(90deg, #3d80d8, #9bd0f0);
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    height: 100vh;
     margin: 0;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: rgb(91, 212, 212);
+    color: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(200%);
 }
