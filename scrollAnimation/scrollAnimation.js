@@ -3,6 +3,15 @@ const boxes = document.querySelectorAll('.box');
 
 window.addEventListener('scroll', checkBoxes);
 
+checkBoxes();
+
 function checkBoxes() {
-    console.log(window.innerHeight) 
+    const triggerBottom = window.innerHeight / 5 * 4; 
+
+    // Using getBoundingClientRect to return DOMRect object,
+    // providing info about the size of element and its 
+    //position relative to the viewport.
+    boxes.forEach(box =>{
+        const boxTop = box.getBoundingClientRect()
+    })
 }
