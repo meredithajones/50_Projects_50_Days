@@ -13,4 +13,12 @@ function blurring() {
     }
 
     loadText.innerText = `${load}%`;
+    //mapping the opacity range along with the inner text load range
+    //in order for the countdown to fade out as the image loads 
+    loadText.style.opacity = scale(load, 0, 100, 1, 0);
 }
+
+// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+const scale = (num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+  }
