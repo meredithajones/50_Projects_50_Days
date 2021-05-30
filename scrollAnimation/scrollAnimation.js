@@ -11,7 +11,7 @@ function checkBoxes() {
     // Using getBoundingClientRect to return DOMRect object,
     // providing info about the size of element and its 
     //position relative to the viewport.
-    boxes.forEach(box =>{
+    boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top 
 
         if(boxTop < triggerBottom) {
