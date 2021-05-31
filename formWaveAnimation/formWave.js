@@ -5,7 +5,7 @@ labels.forEach(label => {
     // splitting the inner html into an array, so each letter has its own item in array
     .split('')
     // Using .map to turn our current array into an array of letters with span around it
-    .map((letter, idx) => <span>${letter}</span>)
+    .map((letter, idx) => `<span>${letter}</span>`)
     // using .join to turn array back into a string
     .join('')
-})
+});
