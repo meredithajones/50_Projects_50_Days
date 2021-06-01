@@ -29,3 +29,12 @@ body {
     font-family: inherit;
     text-transform: uppercase;
 }
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
