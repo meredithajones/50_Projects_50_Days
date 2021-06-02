@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: #ffc947;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -14,4 +15,22 @@ body {
     overflow: hidden;
     height: 100vh;
     margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color:#185adb;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 800px;
+    
+}
+
+h3 {
+    margin: 0;
+    opacity: 0.5;
+    letter-spacing: 2px;
 }
