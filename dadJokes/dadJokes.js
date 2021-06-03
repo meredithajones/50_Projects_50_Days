@@ -13,5 +13,7 @@ function generateJoke() {
 
     //using fetch to access the joke API
     fetch('https://icanhazdadjoke.com', config)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
     
 }
