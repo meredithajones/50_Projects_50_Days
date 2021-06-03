@@ -7,7 +7,7 @@ function generateJoke() {
     const config = {
     //Adding headers to accept values as JSON rather than HTML
     headers: {
-        'Accept': 'application/json'
+        Accept: 'application/json',
         }
     }
 
