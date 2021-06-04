@@ -10,13 +10,17 @@ async function generateJoke() {
         //Adding headers to accept values as JSON rather than HTML
         headers: {
             Accept: 'application/json',
-            }
+            },
         }
     
         //creating variable response to equal "fetch"
         const response = await fetch('https://icanhazdadjoke.com', config)
        
-  
+        const data = await response.json()
+
+        jokeEl.innerHTML = data.joke
+
+}
 
 // function generateJoke() {
 //     const config = {
