@@ -36,3 +36,38 @@ h1 {
     background-color: #fb9300;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
+.faq.active::before, 
+.faq.active::after {
+    /* Accessing Font Awesome Icon through css */
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free'; 
+    color: #f54748;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.35;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.faq.active::before {
+    color: #343f56;
+    top: -10px;
+    left: 300px;
+    opacity: .50;
+}
+
+.faq-title {
+    margin: 0 35px 0 0 ;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
