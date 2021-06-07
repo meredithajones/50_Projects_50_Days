@@ -7,3 +7,12 @@ textarea.addEventListener('keyup', (e) => {
     createTags(e.target.value)
 })
 
+function createTags(input) {
+    const tags = input.split(',').filter( tag => tag.trim()
+    !== '').map(tag => tag.trim())
+        console.log(tags)
+
+        // clearing the content when we are finished
+        tageEL.innerHTML =''
+}
+
