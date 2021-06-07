@@ -1,12 +1,12 @@
 /*Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Lobster', sans-serif;
     background: #FFAFBD;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
@@ -56,4 +56,25 @@ nav ul li {
 nav.active ul li {
     opacity: 1;
     transform: rotateY(360deg);
+}
+
+nav ul a {
+    position: relative;
+    color: rgb(192, 57, 124);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.icon {
+    background-color: whitesmoke;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.icon:focus {
+    outline: 0;
 }
