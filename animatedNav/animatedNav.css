@@ -18,8 +18,9 @@ body {
 }
 
 nav {
-    background-color: #ff9292;
+    background-color: whitesmoke;
     padding: 20px;
+
     width: 80px;
     display: flex;
     align-items: center;
@@ -37,6 +38,7 @@ nav.active {
 nav ul {
     display: flex;
     list-style-type: none;
+    font-size: 20px;
     padding: 0;
     margin: 0;
     width: 0;
@@ -77,4 +79,26 @@ nav ul a {
 
 .icon:focus {
     outline: 0;
+}
+
+.icon .line {
+    background-color: rgb(227, 84, 108);
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.icon .line2 {
+    top: auto;
+    bottom: 10px;
+}
+
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
 }
