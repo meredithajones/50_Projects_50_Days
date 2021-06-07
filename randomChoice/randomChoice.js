@@ -1,5 +1,5 @@
-const tagsEL = document.getElementById('tags');
-const textarea = document.getElementById('textarea');
+const tagsEl = document.getElementById('tags')
+const textarea = document.getElementById('textarea')
 
 textarea.focus()
 
@@ -9,25 +9,23 @@ textarea.addEventListener('keyup', (e) => {
     if(e.key === 'Enter') {
         setTimeout(() => {
             e.target.value = ''
-
         }, 10)
+
+        randomSelect()
     }
 })
 
 function createTags(input) {
-    const tags = input.split(',').filter( tag => tag.trim()
-    !== '').map(tag => tag.trim())
-        console.log(tags)
+    const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
+    
+    tagsEl.innerHTML = ''
 
-        // clearing the content when we are finished
-        tagsEL.innerHTML =''
-
-        tags.forEach(tag => {
-            const tagEL = document.createElement('span')
-            tagEL.classList.add('tag')
-            tagEL.innerText = tag 
-            tagsEL.appendChild(tagEL)
-        })
+    tags.forEach(tag => {
+        const tagEl = document.createElement('span')
+        tagEl.classList.add('tag')
+        tagEl.innerText = tag
+        tagsEl.appendChild(tagEl)
+    })
 }
 
 function randomSelect() {
@@ -35,18 +33,36 @@ function randomSelect() {
 
     const interval = setInterval(() => {
         const randomTag = pickRandomTag()
+
+        highlightTag(randomTag)
+
+        setTimeout(() => {
+            unHighlightTag(randomTag)
+        }, 100)
     }, 100);
 
-    function pickRandomTag() {
-        const tags = document.querySelectorAll('.tag')
-        return tags[Math.floor(Math.random() * tags.length)]
-    }
+    setTimeout(() => {
+        clearInterval(interval)
 
-    function highlightTag(tag) {
-        tag.classList.add('highlight')
-    }
+        setTimeout(() => {
+            const randomTag = pickRandomTag()
 
-    function unHighlightTag(tag) {
-        tag.classList.remove('highlight')
-    }
+            highlightTag(randomTag)
+        }, 100)
+
+    }, times * 100)
 }
+
+function pickRandomTag() {
+    const tags = document.querySelectorAll('.tag')
+    return tags[Math.floor(Math.random() * tags.length)]
+}
+
+function highlightTag(tag) {
+    tag.classList.add('highlight')
+}
+
+function unHighlightTag(tag) {
+    tag.classList.remove('highlight')
+}
+
