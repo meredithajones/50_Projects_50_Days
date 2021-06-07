@@ -13,6 +13,13 @@ function createTags(input) {
         console.log(tags)
 
         // clearing the content when we are finished
-        tageEL.innerHTML =''
+        tagsEL.innerHTML =''
+
+        tags.forEach(tag => {
+            const tagEL = document.createElement('span')
+            tagEL.classList.add('tag')
+            tagEL.innerText = tag 
+            tagsEL.appendChild(tagEL)
+        })
 }
 
