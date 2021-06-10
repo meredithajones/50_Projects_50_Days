@@ -1,6 +1,10 @@
 /*Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abril Fatface:wght@400;700&display=swap');
 
+:root{
+    --fill-color: #70daf5;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -47,5 +51,27 @@ h3 {
     justify-content: center;
     text-align: center;
     margin: 5px;
+    transition: 0.3s ease;
+}
+
+.cup.cup.cup-small.full {
+    background-color: var(--fill-color);
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+}
+
+.remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
     transition: 0.3s ease;
 }
