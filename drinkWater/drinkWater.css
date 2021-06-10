@@ -12,7 +12,7 @@
 body {
     font-family: 'Abril Fatface', sans-serif;
     color: #3161a3;
-    background-color: #ebfffb;
+    background-color:  #7efaff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ h3 {
 }
 
 .cup {
-    background-color: #7efaff;
+    background-color: #ebfffb;
     border: 4px solid #13abc4;
     color: #13abc4;
     border-radius: 0 0 40px 40px;
@@ -74,4 +74,30 @@ h3 {
     flex-direction: column;
     flex: 1;
     transition: 0.3s ease;
+}
+
+.remaining span {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.remaining small {
+    font-size: 12px;
+}
+
+.percentage {
+    background-color: var(--fill-color);
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.text {
+    text-align: center;
+    margin: 0 0 5px;
 }
