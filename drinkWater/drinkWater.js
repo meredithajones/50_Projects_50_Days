@@ -4,5 +4,15 @@ const percentage = document.getElementById('.percentage')
 const remaining = document.getElementById('.remaining')
 
 smallCups.forEach((cup, idx) => {
-    console.log(idx)
+    cup.addEventListener('click', () => highlightCups(idx))
 })
+
+function highlightCups(idx){
+    smallCups.forEach((cup, idx2) => {
+        if(idx2 <= idx) {
+            cup.classList.add('full')
+        } else {
+            cup.classList.remove('full')
+        }
+    })
+}
