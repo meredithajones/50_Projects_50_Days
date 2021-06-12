@@ -31,16 +31,15 @@ function showMovies(movies) {
         <img src="${IMG_PATH + poster_path}" alt="${title}">
         <div class="movie-info">
         <h3>${title}</h3>
-        <span id="green">${vote_average}</span>
+        <span class="${getClassByRate(vote_average)}">${vote_average}</span>
         </div>
         <div class="overview">
         <h3>Overview</h3>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-         Nostrum voluptas nisi repellendus corrupti 
-        beatae quam quasi optio laboriosam illo accusantium.
+        ${overview}
         </div>
     </div>
         `
+        main.appendChild(movieEL)
     })
 }
 
@@ -50,7 +49,7 @@ function getClassByRate(vote) {
     } else if(vote >= 5) {
         return 'orange'
     } else {
-        'red'
+        return 'red'
     }
 }
 
