@@ -79,8 +79,9 @@ main {
 
 .movie-info span {
     padding: .25rem .5rem ;
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: bold;
+    background-color: #09015f;
 }
 
 .movie-info span.green {
