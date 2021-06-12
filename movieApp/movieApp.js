@@ -19,7 +19,7 @@ function showMovies(movies) {
     main.innerHTML = ''
 
     movies.forEach((movie) => {
-        const { title, poster_path, vote_average, overview} 
+        const { title, poster_path, vote_average, overview } 
         = movie 
 
         const movieEL = document.createElement
@@ -27,7 +27,7 @@ function showMovies(movies) {
         movieEL.classList.add('movie')
 
         movieEL.innerHTML = `
-            
+
         `
     })
 }
