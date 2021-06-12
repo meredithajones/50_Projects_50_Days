@@ -27,7 +27,19 @@ function showMovies(movies) {
         movieEL.classList.add('movie')
 
         movieEL.innerHTML = `
-
+        <div class="movie">
+        <img src="${IMG_PATH + poster_path}" alt="${title}">
+        <div class="movie-info">
+        <h3>Movie Title</h3>
+        <span id="green">9.8</span>
+        </div>
+        <div class="overview">
+        <h3>Overview</h3>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Nostrum voluptas nisi repellendus corrupti 
+        beatae quam quasi optio laboriosam illo accusantium.
+        </div>
+    </div>
         `
     })
 }
