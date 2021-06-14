@@ -3,14 +3,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Theme Clock</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
      <link rel="stylesheet" href="themeClock.css">
 </head>
 <body>
-    <h1>Project Starter</h1>
-    <h2>Hey</h2>
-    <h3>Hi</h3>
+  <button class="toggle">Dark Mode</button>
+  
+  <div class="clock-containter">
+      <div class="clock">
+          <div class="needle hour"></div>
+          <div class="needle minute"></div>
+          <div class="needle second"></div>
+          <div class="center-point"></div>
+      </div>
+
+      <div class="time">12:00</div>
+      <div class="date">Monday June <span class="circle">14
+      </span></div>
+  </div>
     <script src="themeClock.js"></script>
 </body>
 </html>
