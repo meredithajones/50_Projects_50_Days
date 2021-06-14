@@ -24,7 +24,7 @@ body::before {
     content: '';
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
@@ -34,7 +34,7 @@ body::before {
 .slider-container {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 
     (0, 0, 0, 0.23);
-    height: 70vph;
+    height: 70vh;
     width: 70vw;
     position: relative;
     overflow: hidden;
@@ -55,5 +55,24 @@ body::before {
 
 .slide.active {
     opacity: 1;
-
 }
+
+.arrow {
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    position: fixed;
+    z-index: 100;
+    border: 2px solid orange;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: calc(15vw - 65px);
+  }
+  
+.right-arrow {
+    right: calc(15vw - 65px);
+  }
