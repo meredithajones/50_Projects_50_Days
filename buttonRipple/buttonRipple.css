@@ -46,3 +46,14 @@ button .circle {
     transform: translate(-50%, -50%) scale(0);
     animation: scale 0.5s ease-out;
 }
+
+/* Adding animation */
+
+@keyframes scale {
+    to{
+        
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+
+    }
+}
