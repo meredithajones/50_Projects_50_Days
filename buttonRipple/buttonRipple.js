@@ -20,5 +20,8 @@ buttons.forEach(button => {
         // Because we are using "this" we cannot use an arrow function
         this.appendChild(circle);
 
+        //Removing the circles generated on each click from the DOM
+        setTimeout(() => circle.remove(), 500)
+
     })
 })
