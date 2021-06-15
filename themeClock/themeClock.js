@@ -26,14 +26,14 @@ function setTime(){
     const month = time.getMonth();
     const day = time.getDay();
     const hours = time.getHours();
-    const hoursForClock = hours % 12;
+    const hoursForClock = hours >= 13 ? hours % 12 : hours;
     const minutes = time.getMinutes();
     const seconds = time.getSeconds;
     console.log();
 
     hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`
     minutesEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`
-    secondsEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
+    secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
 }
 
     const scale = (num, in_min, in_max, out_min, out_max) => {
@@ -42,3 +42,5 @@ function setTime(){
     }
 
 setTime()
+
+setInterval(setTime, 1000)
