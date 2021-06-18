@@ -7,11 +7,24 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     height: 100vh;
     margin: 0;
 }
+
+#canvas {
+    border: 2px solid steelblue;
+}
+
+.toolbox {
+    background-color: steelblue;
+    border: 2px solid slateblue;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
