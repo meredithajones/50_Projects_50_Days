@@ -74,5 +74,21 @@ img {
 
 .author-info small {
     margin-top: 10px;
+    color: rgb(90, 90, 121)
+}
 
+.animated-bg {
+    background-image: linear-gradient(to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%);
+    background-size: 200% 100%;
+}
+
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
 }
