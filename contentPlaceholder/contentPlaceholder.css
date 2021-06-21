@@ -6,17 +6,17 @@
 }
 
 body {
-    background-color: #729c72;
+    background-color: #FAF3E0;
     font-family: 'Damion', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100vh;
     margin: 0;
 }
 
-.img {
+img {
     max-width: 100%;
 }
 
@@ -25,5 +25,30 @@ body {
     border-radius: 12px;
     overflow: hidden;
     width: 350px;
-    
+
+}
+
+.card-header {
+    height: 200px;
+}
+
+.card-header img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    background-color: #EABF9F;
+    padding: 30px;
+}
+
+.card-title {
+    height: 20px;
+    margin: 0;
+}
+
+.card-excerpt {
+    color: #1E212D;
+    margin: 10px 0 20px;
 }
