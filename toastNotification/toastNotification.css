@@ -18,3 +18,13 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+button {
+    font: inherit;
+    background-color: rgb(242, 243, 172);
+    color: rgb(29, 54, 216);
+    padding: 1rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
