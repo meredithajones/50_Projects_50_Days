@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    color: white;
+    color: rgb(20, 23, 177);
 }
 
 .left-slide {
@@ -42,6 +42,8 @@ body {
     margin-bottom: 10px;
     margin-top: -10px;
     text-transform: uppercase;
+    border: solid 2px rgb(20, 23, 177);
+    padding: 20px;
 }
 
 .left-slide p {
