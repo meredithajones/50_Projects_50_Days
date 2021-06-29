@@ -3,7 +3,11 @@ const APIURL = 'https://api.github.com/users/'
 getUser('meredithajones')
 
  async function getUser(username) {
-    const res = await axios(APIURL + username)
+     try {
+    const {data} = await axios(APIURL + username)
     
-    console.log(res.data)
-}
+    console.log(data)
+      } catch(err) {
+        console.log(err)
+    }
+ }
