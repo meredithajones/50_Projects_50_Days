@@ -53,3 +53,21 @@ body::before {
 .user-form input:focus {
     outline: none;
 }
+
+.card  {
+    max-width: 800px;
+    background-color: #1A508B;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+    
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #0D335D;
+    height: 150px;
+    width: 150px;
+}
