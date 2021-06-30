@@ -11,7 +11,9 @@ const search = document.getElementById('search')
     
     createUserCard(data)
       } catch(err) {
-        console.log(err)
+        if(err.response.status == 404) {
+            createErrorCard('No profile with this username exists')
+        }
     }
  }
 
@@ -24,24 +26,31 @@ const search = document.getElementById('search')
      </div>
      <div class="user-info">
          <h2>${user.name}</h2>
-         <p>Lorem ipsum dolor sit amet consectetur 
-             adipisicing elit. Amet, repellendus.</p>
+         <p>${user.bio}</p>
              <ul>
-                 <li>300 <strong>Followers</strong></li>
-                 <li>100 <strong>Following</strong></li>
-                 <li>17 <strong>Repos</strong></li>
+                 <li>${user.followers}<strong>Followers</strong></li>
+                 <li>${user.following} <strong>Following</strong></li>
+                 <li>${user.public_repos}<strong>Repos</strong></li>
              </ul>
 
              <div id="repos">
-                 <a href="#" class="repo">Repo 1</a>
-                 <a href="#" class="repo">Repo 2</a>
-                 <a href="#" class="repo">Repo 3</a>
+
              </div>
      </div>
 </div>`
 
     main.innerHTML = cardHTML
 
+ }
+
+ function createErrorCard(msg) {
+     const cardHTML = `
+        <div class= "card">
+            <h1>${msg}</h1>
+        </div>
+     `
+
+     main.innerHTML = cardHTML
  }
 
  form.addEventListener('submit', (e) => {
