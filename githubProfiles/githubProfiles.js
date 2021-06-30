@@ -9,7 +9,7 @@ const search = document.getElementById('search')
      try {
     const {data} = await axios(APIURL + username)
     
-    console.log(data)
+    createUserCard(data)
       } catch(err) {
         console.log(err)
     }
@@ -19,11 +19,11 @@ const search = document.getElementById('search')
      const cardHTML = 
      `  <div class="card">
      <div>
-         <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="" 
+         <img src="${user.avatar_url}" alt="${user.name}" 
          class="avatar">
      </div>
      <div class="user-info">
-         <h2>J.D.</h2>
+         <h2>${user.name}</h2>
          <p>Lorem ipsum dolor sit amet consectetur 
              adipisicing elit. Amet, repellendus.</p>
              <ul>
@@ -40,6 +40,7 @@ const search = document.getElementById('search')
      </div>
 </div>`
 
+    main.innerHTML = cardHTML
 
  }
 
