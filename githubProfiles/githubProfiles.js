@@ -10,6 +10,7 @@ const search = document.getElementById('search')
     const {data} = await axios(APIURL + username)
     
     createUserCard(data)
+    getRepos(username)
       } catch(err) {
         if(err.response.status == 404) {
             createErrorCard('No profile with this username exists')
@@ -19,15 +20,14 @@ const search = document.getElementById('search')
 
  async function getRepos(username) {
     try {
-        const {data} = await axios(APIURL + username)
+        const {data} = await axios(APIURL + username + '/repos')
         
-        createUserCard(data)
+        addReposToCard(data)
           } catch(err) {
-            if(err.response.status == 404) {
-                createErrorCard('No profile with this username exists')
+                createErrorCard('Unable to fetch repos')
             }
         }
-     }
+
 
  function createUserCard(user) {
      const cardHTML = 
@@ -63,6 +63,11 @@ const search = document.getElementById('search')
      `
 
      main.innerHTML = cardHTML
+ }
+ function addReposToCard(repos) {
+     const reposEL = document.getElementById('repos')
+
+     
  }
 
  form.addEventListener('submit', (e) => {
