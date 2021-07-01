@@ -20,7 +20,7 @@ const search = document.getElementById('search')
 
  async function getRepos(username) {
     try {
-        const {data} = await axios(APIURL + username + '/repos')
+        const {data} = await axios(APIURL + username + '/repos?sort=created')
         
         addReposToCard(data)
           } catch(err) {
@@ -67,7 +67,9 @@ const search = document.getElementById('search')
  function addReposToCard(repos) {
      const reposEL = document.getElementById('repos')
 
-     repos.forEach(repo => {
+     repos
+     .slice(0, 10)
+     .forEach(repo => {
          const repoEl = document.
          createElement('a')
          repoEl.classList.add('repo')
