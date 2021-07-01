@@ -67,11 +67,15 @@ const search = document.getElementById('search')
  function addReposToCard(repos) {
      const reposEL = document.getElementById('repos')
 
-     repos.array.forEach(repo => {
-         const repoElement = document.
+     repos.forEach(repo => {
+         const repoEl = document.
          createElement('a')
-         repoElement.classList.add('repo')
+         repoEl.classList.add('repo')
+         repoEl.href = repo.html_url
+         repoEl.target = '_blank'
+         repoEl.innerText = repo.name
 
+        reposEL.appendChild(repoEl)
     });
  }
 
