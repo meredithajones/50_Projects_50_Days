@@ -17,6 +17,18 @@ const search = document.getElementById('search')
     }
  }
 
+ async function getRepos(username) {
+    try {
+        const {data} = await axios(APIURL + username)
+        
+        createUserCard(data)
+          } catch(err) {
+            if(err.response.status == 404) {
+                createErrorCard('No profile with this username exists')
+            }
+        }
+     }
+
  function createUserCard(user) {
      const cardHTML = 
      `  <div class="card">
