@@ -67,7 +67,12 @@ const search = document.getElementById('search')
  function addReposToCard(repos) {
      const reposEL = document.getElementById('repos')
 
-     
+     repos.array.forEach(repo => {
+         const repoElement = document.
+         createElement('a')
+         repoElement.classList.add('repo')
+
+    });
  }
 
  form.addEventListener('submit', (e) => {
