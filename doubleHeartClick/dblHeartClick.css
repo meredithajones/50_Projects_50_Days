@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     height: 100vh;
     margin: 0;
 }
@@ -31,6 +30,33 @@ h1 {
     font-size: 80px;
     color: #59405C;
     background: rgb(235, 217, 217, .85);
-    padding: 30px;
+    padding: 10px 30px;
     border-radius: 10px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+small {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fa-heart {
+    color: rgb(146, 3, 3);
+}
+
+.loveMe {
+    height: 440px;
+    width: 300px;
+    background: url('https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80') 
+    no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    border: whitesmoke 20px solid;
+    border-radius: 5px;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 5px 10px 8px 10px #0e0c13;
 }
