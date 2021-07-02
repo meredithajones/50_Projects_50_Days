@@ -20,4 +20,16 @@ const createHeart = (e) => {
     const heart = document.createElement('i')
     heart.classList.add('fas')
     heart.classList.add('fa-heart')
+
+    const x = e.clientX
+    const y = e.clientY 
+
+    const leftOffset = e.target.leftOffset
+    const topOffset = e.target.topOffet 
+
+    const xInside = x - leftOffset
+    const yinsdie = y - topOffset
+
+    console.log(x, y);
+
 }
