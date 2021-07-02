@@ -5,6 +5,7 @@ let clickTime = 0
 
 loveMe.addEventListener('click', (e) => {
     if(clickTime === 0) {
-        clickTime = new
+        clickTime = new Date().getTime()
+        console.log(clickTime)
     }
 })
