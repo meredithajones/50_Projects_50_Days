@@ -24,12 +24,13 @@ const createHeart = (e) => {
     const x = e.clientX
     const y = e.clientY 
 
-    const leftOffset = e.target.leftOffset
-    const topOffset = e.target.topOffet 
+    const leftOffset = e.target.offsetLeft
+    const topOffset = e.target.offsetTop 
 
     const xInside = x - leftOffset
-    const yinsdie = y - topOffset
+    const yInside = y - topOffset
 
-    console.log(x, y);
+   heart.style.top = `${yInside}px`
+   heart.style.left = `${xInside}px`
 
 }
