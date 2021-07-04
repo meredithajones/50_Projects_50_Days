@@ -25,3 +25,16 @@ div {
     font-size: 18px;
 }
 
+input {
+    width: 50px;
+    padding: 5px;
+    font-size: 17px;
+    background-color: #FFC93C;
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
