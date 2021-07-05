@@ -28,7 +28,15 @@ generateEl.addEventListener('click', () => {
 function generatePassword(lower, upper, number, symbol, length) {
     let generatedPassword = ''
     const typesCount = lower + upper + number + symbol
-    const typesArray = [{lower}, {upper}, {number}, {symbol}]
+    const typesArray = [{lower}, {upper}, {number}, {symbol}].
+    // using .filter to remove anything in the array with false as a value
+    filter(item => Object.values(item) [0])
+
+    if(typesCount === 0) {
+        return ''
+    }
+
+    
     console.log(typesArray)
 }
 
