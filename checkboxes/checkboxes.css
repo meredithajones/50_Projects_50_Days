@@ -54,3 +54,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+@keyframes slideOn {
+    0% {
+        transform: translateX() scale(1);
+    }
+    50% {
+        transform: translateX(20px) scale(1.2);
+    }
+
+    100% {
+        transform: translateX(40px) scale(1);
+    }
+}
