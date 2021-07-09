@@ -1,5 +1,11 @@
 const addBtn = document.getElementById('add')
 
+const notes = JSON.parse(localStorage.getItem('notes'))
+
+if(notes) {
+    notes.forEach(note => addNewNote(note))
+}
+
 addBtn.addEventListener('click', () => addNewNote())
 
 function addNewNote(text = '') {
@@ -8,18 +14,39 @@ function addNewNote(text = '') {
 
     note.innerHTML = `
     <div class="tools">
-            <button class="edit"><i class="fas fa-edit"></i></button>
-            <button class="delete"><i class="fas fa-trash-alt"></i></button>
-            </div>
-            <div class="main ${text ? "" : "hidden"}"></div>
-            <textarea class="${text ? "hidden" : ""}" style="background-image: url('https://i.pinimg.com/originals/41/1f/37/411f37504d67b1f04d6b47f1f71e3cbf.jpg');"></textarea>
-    `       
+        <button class="edit"><i class="fas fa-edit"></i></button>
+        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+    </div>
+    <div class="main ${text ? "" : "hidden"}"></div>
+    <textarea class="${text ? "hidden" : ""}" style="background-image: url('https://i.pinimg.com/originals/41/1f/37/411f37504d67b1f04d6b47f1f71e3cbf.jpg');"></textarea>
+    `
 
-    const editBtn = note.querySelector('edit')
-    const deleteBtn = note.querySelector('delete')
-    const main = note.querySelector('main')
+    const editBtn = note.querySelector('.edit')
+    const deleteBtn = note.querySelector('.delete')
+    const main = note.querySelector('.main')
     const textArea = note.querySelector('textarea')
-        
-    
+
+    textArea.value = text
+    main.innerHTML = marked(text)
+
+    deleteBtn.addEventListener('click', () => {
+        note.remove()
+
+        updateLS()
+    })
+
+    editBtn.addEventListener('click', () => {
+        main.classList.toggle('hidden')
+        textArea.classList.toggle('hidden')
+    })
+
+    textArea.addEventListener('input', (e) => {
+        const { value } = e.target
+
+        main.innerHTML = marked(value)
+
+        updateLS()
+    })
+
     document.body.appendChild(note)
 }

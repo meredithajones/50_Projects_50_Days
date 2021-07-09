@@ -65,6 +65,6 @@ body {
     background-size: 100%;
 }
 
-.textarea:focus {
-    border: none;
-}
+.hidden {
+    display: none;
+  }
