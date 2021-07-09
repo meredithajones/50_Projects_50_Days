@@ -51,7 +51,6 @@ function addNewNote(text = '') {
     document.body.appendChild(note)
 }
 
-
 function updateLS() {
     const notesText = document.querySelectorAll('textarea')
 

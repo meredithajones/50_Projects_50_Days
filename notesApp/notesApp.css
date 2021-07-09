@@ -30,11 +30,19 @@ body {
 }
 
 .note {
-    background-color: azure;
+    font-family: 'Permanent Marker';
+    background-image: url('https://i.pinimg.com/originals/41/1f/37/411f37504d67b1f04d6b47f1f71e3cbf.jpg');
+    background-size: 100%;
+    color: #19456B;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0 , 0.1);
     margin: 30px 20px;
     height: 400px;
     width: 400px;
+}
+
+.note p {
+    padding: 0px 60px;
+    font-size: 1.2rem;
 }
 
 .note .tools {
