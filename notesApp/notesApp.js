@@ -15,5 +15,11 @@ function addNewNote(text = '') {
             <textarea class="${text ? "hidden" : ""}" style="background-image: url('https://i.pinimg.com/originals/41/1f/37/411f37504d67b1f04d6b47f1f71e3cbf.jpg');"></textarea>
     `       
 
-        document.body.appendChild(note)
+    const editBtn = note.querySelector('edit')
+    const deleteBtn = note.querySelector('delete')
+    const main = note.querySelector('main')
+    const textArea = note.querySelector('textarea')
+        
+    
+    document.body.appendChild(note)
 }
