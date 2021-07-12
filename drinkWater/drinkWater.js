@@ -1,7 +1,7 @@
-const smallCups = document.querySelectorAll('.cup-small')
-const liters = document.getElementById('.liters')
+const smallCups = document.querySelectorAll('cup-small')
+const liters = document.getElementById('liters')
 const percentage = document.getElementById('percentage')
-const waterLeft = document.getElementById('.waterLeft')
+const waterLeft = document.getElementById('waterLeft')
 
 console.log(waterLeft);
 
@@ -46,8 +46,8 @@ function updateBigCup() {
     if(fullCups === totalCups) {
         waterLeft.style.visibility = 'hidden'
         waterLeft.style.height = 0
-    // } else {
-    //     waterLeft.style.visibility = 'visible'
-    //     liters.innerText = `${2 - (250 * fullCups / 1000)}L`
+    } else {
+        waterLeft.style.visibility = 'visible'
+        liters.innerText = `${2 - (250 * fullCups / 1000)}L`
     }
 }
