@@ -8,6 +8,12 @@ runAnimation()
 function resetDOM() {
     counter.classList.remove('hide')
     finalMessage.remove('show')
+
+    nums.forEach((num) => {
+        num.classList.value = ''
+    })
+
+    nums[0].classList.add('in')
 }
 
 function runAnimation() {
@@ -27,3 +33,8 @@ function runAnimation() {
         })
     })
 }
+
+replay.addEventListener('click', () => {
+    resetDOM()
+    runAnimation()
+})
