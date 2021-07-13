@@ -21,6 +21,7 @@ body {
   
   .counter {
     position: fixed;
+    color: #A7FF83;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -44,6 +45,8 @@ body {
   
   .final {
     position: fixed;
+    color: #A7FF83;
+    font-size: 35px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -68,9 +71,24 @@ body {
       transform: translate(-50%, -50%) scale(1);
     }
   }
+
+  #replay {
+      font-size: 20px;
+      background-color: #17B978;
+      border: none;
+      padding: 7px;
+      border-radius: 4px;
+      margin-top: 25px;
+      cursor: pointer;
+  }
+
+  #replay:hover {
+      background-color: rgb(165, 245, 163);
+      color:rgb(117, 240, 17)
+  }
   
   .numbers {
-    color: #3498db;
+    color: #A7FF83;
     font-size: 50px;
     position: relative;
     overflow: hidden;
