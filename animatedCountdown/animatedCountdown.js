@@ -5,6 +5,11 @@ const replay = document.querySelector('#replay')
 
 runAnimation()
 
+function resetDOM() {
+    counter.classList.remove('hide')
+    finalMessage.remove('show')
+}
+
 function runAnimation() {
     nums.forEach((num, idx) => {
         const nextToLast = nums.length -1
