@@ -3,13 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Image Carousel</title>
     <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="imageCarousel.css">
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="carousel">
+        <div class="image-container" id="imgs">
+            <img src="https://images.unsplash.com/photo-1524598242706-19bed322a3fa?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="1st">
+            <img src="https://images.unsplash.com/photo-1574166492482-30c2464c7680?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hY2h1JTIwcGljY2h1fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="2nd">
+            <img src="https://images.unsplash.com/photo-1592825803503-05b56a708fbd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGN1YmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="3rd">
+            <img src="https://images.unsplash.com/photo-1504618223053-559bdef9dd5a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlyZWxhbmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="4th">
+            <img src="https://images.unsplash.com/photo-1583395838144-09c70d270bda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80" alt="5th">
+            <img src="https://images.unsplash.com/photo-1607427293702-036933bbf746?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt="6th">
+        </div>
+        <div class="buttons-container">
+            <button id="left">Prev</button>
+            <button class="right">Next</button>
+        </div>
+    </div>
     <script src="imageCarousel.js"></script>
 </body>
 </html>
