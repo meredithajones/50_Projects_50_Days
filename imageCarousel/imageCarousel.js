@@ -34,3 +34,9 @@ rightButton.addEventListener('click', () => {
     changeImage()
     resetInterval()
 })
+
+leftButton.addEventListener('click', () => {
+    idx--
+    changeImage()
+    resetInterval()
+})
