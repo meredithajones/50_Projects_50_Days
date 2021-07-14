@@ -17,7 +17,7 @@ body {
 
 .image-container {
     display: flex;
-    transform: translateX(0);
+    transform: translateX(0px);
     transition: transform 0.5s ease-in-out;
     
 }   
