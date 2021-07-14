@@ -21,5 +21,16 @@ function changeImage() {
         idx = photo.length -1
     }
 
-    imgs.style.transform = `translateX(#{-idx * 500}px)`
+    imgs.style.transform = `translateX(${-idx * 500}px)`
 }
+
+function resetInterval() {
+    clearInterval(interval)
+    interval = setInterval(run, 2000)
+}
+
+rightButton.addEventListener('click', () => {
+    idx++
+    changeImage()
+    resetInterval()
+})
