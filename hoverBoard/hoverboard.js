@@ -11,3 +11,15 @@ for (let i = 0; i < SQUARES; i++) {
 
     container.appendChild(square)
 }
+
+function setColor(element) {
+    const color = getRandomColor()
+}
+
+function removeColor(element) {
+
+}
+
+function getRandomColor() {
+    return colors[Math.floor(Math.random() * colors.length)]
+}
