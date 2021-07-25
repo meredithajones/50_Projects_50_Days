@@ -34,18 +34,28 @@ const createPokemonCard = (pokemon) => {
   const pokemonEl = document.createElement("div");
   pokemonEl.classList.add("pokemon");
 
+
+  const name = pokemon.name.toUpperCase()
+  const id = pokemon.id.toString().padStart(3, '0')
+
+  const poke_types = pokemon.types.map(type => type.type.name)
+    const type = main_types.find(type => poke_types.indexOf(type) > -1)
+    const color = colors[type]
+
   const pokemonInnerHTML = `
-    <div class="pokemon" style = "background-color: rgb(222, 253, 224)"> 
-            <div class="img-container">
-                <img src="https://3dprintingindustry.com/wp-content/uploads/2014/08/1.png" alt="Bulbasaur">
-            </div>
-         <div class ="info">
-             <span class="number">#001</span>
-             <h3 class= "name">Bulbasaur</h3>
-             <small class="type">Type: <span>grass</span></small>
-         </div>
-        </div>
-    `;
+  <div class="img-container">
+      <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" alt="">
+  </div>
+  <div class="info">
+      <span class="number">#${id}</span>
+      <h3 class="name">${name}</h3>
+      <small class="type">Type: <span>${type}</span> </small>
+  </div>
+  `;
+
+    pokemonEl.innerHTML = pokemonInnerHTML
+
+    poke_container.appendChild(pokemonEl);
 };
 
 fetchPokemons();
