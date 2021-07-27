@@ -1,17 +1,36 @@
 /*Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fjalla', sans-serif;
+    background-image: linear-gradient(to right, #435f59 0%, rgb(6, 36, 27) 100%);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     height: 100vh;
     margin: 0;
+}
+
+.phone {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 15px;
+    height: 600px;
+    width: 340px;
+}
+
+.phone .content {
+    /* opacity: 0;  */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.4s ease;
 }
