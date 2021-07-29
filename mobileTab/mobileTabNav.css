@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fjalla', sans-serif;
-    background-image: linear-gradient(to right, #435f59 0%, rgb(6, 36, 27) 100%);
+    background-image: linear-gradient(to right, #5b7771 0%, rgb(7, 56, 42) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,7 @@ body {
     position: relative;
     overflow: hidden;
     border: 3px solid white;
+    box-shadow: 5px 10px 8px 10px #023319;
     border-radius: 15px;
     height: 600px;
     width: 340px;

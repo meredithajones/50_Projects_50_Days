@@ -7,3 +7,11 @@ listItems.forEach((item, idx) => {
         hideAllItems()  
     })
 })
+
+function hideAllContents() {
+    contents.forEach(content => content.classList.remove('show'));
+}
+
+function hideAllItems() {
+    contents.forEach(item => item.classList.remove('active'));
+}
