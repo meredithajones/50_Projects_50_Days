@@ -3,5 +3,7 @@ const background = document.getElementById('background');
 
 password.addEventListener('input', (e) => {
     const input = e.target.value 
-    console.log(input)
+    const length = input.length
+    const blurValue = 30 - length * 2.5;
+    background.style.filter = `blur(${blurValue}px)`
 }) 
