@@ -31,3 +31,22 @@ body {
     justify-content: center;
     margin: 40px 40px;
 }
+
+.code {
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 75px;
+    height: 120px;
+    width: 100px;
+    border: 1px solid #eee;
+    margin: 1px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+
+}
