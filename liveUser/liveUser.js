@@ -11,4 +11,14 @@ async function getData() {
  
     //Clear Results
     results.innerHTML = ''
+
+    results.forEach(user => {
+        const li = document.createElement('li')
+
+        listItems.push(li)
+
+        li.innerHTML = `
+            <img src="{user.picture.large}" alt="${user.name.first}"
+        `
+    })
 }
