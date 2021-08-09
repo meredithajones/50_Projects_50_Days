@@ -18,6 +18,9 @@ body {
 
 h1 {
     color: #282846;
+    background-color: #FED049;
+    padding: 20px 70px;
+    border: 2px solid #282846;
 }
 
 .container {
@@ -78,7 +81,8 @@ header input:focus {
     object-fit: cover;
     height: 65px;
     width: 65px;
-    padding: 4px;
+    padding: 2px;
+    margin: 7px;
 }
 
 .user-list .user-info h4 {
