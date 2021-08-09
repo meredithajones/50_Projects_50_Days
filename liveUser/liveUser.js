@@ -9,8 +9,8 @@ async function getData() {
 
     const { results }  = await res.json();
  
-    //Clear Results
-    results.innerHTML = ''
+    //Clear Result
+    result.innerHTML = ''
 
     results.forEach(user => {
         const li = document.createElement('li')
@@ -18,12 +18,14 @@ async function getData() {
         listItems.push(li)
 
         li.innerHTML = `
-            <img src="{user.picture.large}" 
+            <img src="${user.picture.large}" 
             alt="${user.name.first}">
             <div class="user-info">
             <h4>${user.name.first} ${user.name.last}</h4>
             <p>${user.location.city}, ${user.location.country}</p>
             </div>
         `
+
+        result.appendChild(li)
     })
 }
