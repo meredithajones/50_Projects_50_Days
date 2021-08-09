@@ -7,11 +7,19 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #D8EBE4;
+    color: 007580;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    align-items: center; 
     height: 100vh;
     margin: 0;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+
 }
