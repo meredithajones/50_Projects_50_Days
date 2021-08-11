@@ -10,3 +10,9 @@ panel.addEventListener('click', (e) => {
 
 })
 
+function removeActive() {
+    for(let i = 0; i < ratings.length; i++) {
+        ratings[i].classList.remove('active')
+    }
+}
+
