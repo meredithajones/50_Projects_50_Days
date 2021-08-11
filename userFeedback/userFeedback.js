@@ -3,9 +3,13 @@ const sendBtn = document.querySelector('#send');
 const panel = document.querySelector('#panel');
 
 panel.addEventListener('click', (e) => {
-    if(e.target.parentNode.classList.contains('rating')) 
-    {
+    if(e.target.parentNode.classList.contains
+        ('rating')) {
+            removeActive()
         e.target.parentNode.classList.add('active');
+        selectedRating = e.target.
+        nextElementSibling.innerHTML
+        console.log(selectedRating)
     }
 
 })
