@@ -1,12 +1,15 @@
 /*Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lemon', sans-serif;
+    background: #DBE6F6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,4 +17,21 @@ body {
     overflow: hidden;
     height: 100vh;
     margin: 0;
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+    font-size: 37px;
+    color: #FDC8AA;
+}
+
+.range-container {
+    position: relative;
+}
+
+input[type='range'] {
+    width: 300px;
+    margin: 18px 0;
+    -webkit-appearance: none;
 }
