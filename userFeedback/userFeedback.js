@@ -9,9 +9,18 @@ panel.addEventListener('click', (e) => {
         e.target.parentNode.classList.add('active');
         selectedRating = e.target.
         nextElementSibling.innerHTML
-        console.log(selectedRating)
+        
     }
 
+})
+
+sendBtn.addEventListener('click', (e) => {
+    panel.innerHTML = `
+        <i class="fas fa-heart"></i>
+        <strong>Thank You!</strong>
+        <br>
+        <strong>Feedback: </strong>
+    `
 })
 
 function removeActive() {
