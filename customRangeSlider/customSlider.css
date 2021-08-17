@@ -93,15 +93,6 @@ input[type='range']::-moz-range-track {
     cursor: pointer;
 }
 
--webkit-appearance: none;
-height: 24px;
-width: 24px;
-background: white;
-border-radius: 50%;
-border: 1px solid #740021;
-margin-top: -7px;
-}
-
 /* Styling for Internet Explorer */
 input[type='range']::-ms-thumb {
 -webkit-appearance: none;
