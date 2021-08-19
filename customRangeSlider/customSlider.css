@@ -34,10 +34,6 @@ h2 {
     position: relative;
 }
 
-.range-wrapper {
-    background: black;
-    padding: 0 27px;
-}
 
 input[type='range'] {
     width: 300px;
