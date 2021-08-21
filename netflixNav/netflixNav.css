@@ -43,5 +43,21 @@ body {
     left: 0;
     height: 100vh;
     transform: translateX(-100%);
-    
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+    transform: translateX(0);
+}
+
+.nav-purple {
+    background-color: #52006A;
+    width: 60%;
+    max-width: 480px;
+    min-width: 320;
+}
+
+.nav-red {
+    background-color: #CD113B;
+    width: 95%;
 }
