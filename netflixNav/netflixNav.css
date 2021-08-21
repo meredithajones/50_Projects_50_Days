@@ -61,3 +61,33 @@ body {
     background-color: #CD113B;
     width: 95%;
 }
+
+.nav-orange {
+    background-color: #FF7600;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    opacity: 0.5;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    margin: 20px 0;
+}
+
+.list li a {
+    color: #52006A;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
