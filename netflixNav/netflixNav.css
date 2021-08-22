@@ -83,6 +83,12 @@ body {
 
 .list li {
     margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.list li:hover {
+    cursor: pointer;
+    color: #CD113B;
 }
 
 .list li a {
@@ -90,4 +96,10 @@ body {
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
+    list-style-type: none;
+}
+
+.list ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
