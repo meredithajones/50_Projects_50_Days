@@ -50,16 +50,26 @@ body {
     transform: translateX(0);
 }
 
+.nav-purple.visible {
+    transition-delay: 0s; 
+}
+
 .nav-purple {
     background-color: #52006A;
     width: 60%;
     max-width: 480px;
     min-width: 320;
+    transition-delay: .4s;
 }
 
 .nav-red {
     background-color: #CD113B;
     width: 95%;
+    transition-delay: .2s;
+}
+
+.nav-red.visible {
+    transition-delay: .2s;
 }
 
 .nav-orange {
@@ -67,6 +77,11 @@ body {
     width: 95%;
     padding: 40px;
     position: relative;
+    transition-delay: 0s;
+}
+
+.nav-orange.visible {
+    transition-delay: 0.4s ;
 }
 
 .close-btn {
