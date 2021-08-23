@@ -19,6 +19,10 @@ body {
 
 .quiz-container {
     background-color: #726A95;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px 10px #5a7076;
+    width: 600px;
+    overflow: hidden;
 }
 
 .quiz-header {
@@ -27,6 +31,9 @@ body {
 
 h2 {
     padding: 1rem;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #submit {
