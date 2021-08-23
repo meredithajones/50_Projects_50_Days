@@ -17,6 +17,17 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 67px;
+    margin-top: -7rem;
+    color: #351F39;
+    padding: 2rem 4rem;
+    border-radius: 7px;
+    border: solid 1.5px #351F39;
+    box-shadow: 4px 7px 4px 7px #6e8d96;
+    background-color: #719FB0;
+}
+
 .quiz-container {
     background-color: #726A95;
     border-radius: 10px;
