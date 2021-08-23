@@ -23,6 +23,7 @@ body {
     box-shadow: 5px 10px 8px 10px #5a7076;
     width: 600px;
     overflow: hidden;
+    border: solid 1px #351F39;
 }
 
 .quiz-header {
@@ -36,15 +37,32 @@ h2 {
     text-align: center;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.25rem;
+    margin: 1rem;
+    margin-left: 4rem;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
 #submit {
     background-color: #719FB0;
+    font-family: inherit;
     font-size: 17px;
     padding:10px 20px;
     border-radius: 7px;
-    margin: 5px;
     outline: none;
+    margin-top: 22px;
     border-style: none;
     cursor: pointer;
+    width: 100%;
 }
 
 #submit:hover {
@@ -55,8 +73,4 @@ h2 {
 
 .quiz-header {
     padding: 4rem;
-}
-
-h2 {
-    padding: 1rem;
 }
