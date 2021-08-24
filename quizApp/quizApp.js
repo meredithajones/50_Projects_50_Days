@@ -84,6 +84,14 @@ function deselectAnswers() {
                     score++
                 }
                 currentQuiz++
+
+                if(currentQuiz < quizData.length) {
+                    loadQuiz()
+                } else {
+                    quiz.innerHTML = `
+                        <h2> You answered correctly at ${score}
+                        /${quizData.length} questions<h2>
+                    `
             }
         })
 }
