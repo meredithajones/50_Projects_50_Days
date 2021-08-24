@@ -78,6 +78,12 @@ function deselectAnswers() {
 
         submitBtn.addEventListener('click', () => {
             const answer = getSelected()
-            console.log(answer);
+            
+            if(answer) {
+                if(answer === quizData[currentQuiz].correct) {
+                    score++
+                }
+                currentQuiz++
+            }
         })
 }
