@@ -64,7 +64,20 @@ function deselectAnswers() {
     answerElements.forEach(answerElements => answerElements.checked =
         false);
 
+        function getSelected() {
+            let answer
+
+            answerElements.forEach(answerElements => {
+                if(answerElements.checked) {
+                    answer = answerElements.id
+                }
+            })
+
+            return answer
+        }
+
         submitBtn.addEventListener('click', () => {
             const answer = getSelected()
+            console.log(answer);
         })
 }
