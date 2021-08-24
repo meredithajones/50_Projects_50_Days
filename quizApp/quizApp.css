@@ -68,7 +68,7 @@ ul li label {
     cursor: pointer;
 }
 
-#submit {
+button {
     background-color: #719FB0;
     font-family: inherit;
     font-size: 17px;
