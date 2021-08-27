@@ -26,10 +26,11 @@ body {
     padding: 50px 80px;
     max-width: 768px;
     position: relative;
+    box-shadow: 5px 10px 8px 10px rgba(30,52,73,0.6);
 }
 
 .fa-quote {
-    color: rgba(242,163,101,0.8);
+    color: rgba(242,163,101,0.90);
     font-size: 28px;
     position: absolute;
     top: 70px;
@@ -73,7 +74,14 @@ body {
     background-color: #F2A365;
     height: 4px;
     width: 100%;
-    animation: grow 10s linear;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
 }
 
 @media(max-width: 768px) {
