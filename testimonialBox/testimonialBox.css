@@ -29,7 +29,7 @@ body {
 }
 
 .fa-quote {
-    color: rgba(255, 255, 255 0.3);
+    color: rgba(242,163,101,0.8);
     font-size: 28px;
     position: absolute;
     top: 70px;
@@ -43,8 +43,9 @@ body {
     left: 40px;
 }
 
-.tesimonial {
+ p {
     line-height: 28px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -68,12 +69,19 @@ body {
     margin: 7px 0;
 }
 
+.progress-bar {
+    background-color: #F2A365;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear;
+}
+
 @media(max-width: 768px) {
     .testimonial-container {
         padding: 20px 30px;
     }
 
-    .fa-quote{
+    .fa-quote {
         display: none;
     }
 }
