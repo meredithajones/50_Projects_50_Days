@@ -12,8 +12,19 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #d8e6c9;
-    color: #025955;
-    overflow: hidden;
+    color: #01423f;
     height: 100vh;
     margin: 0;
+}
+
+h1 {
+    color: #9B3675;
+    font-size: 10rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
