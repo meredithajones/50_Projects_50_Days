@@ -17,8 +17,16 @@ function addTodo(todo) {
 
     if(todoText) {
         const todoEl = document.createElement('li')
-        if(to && todo.completed) {
+        if(todo && todo.completed) {
             todoEl.classList.add('completed')
         }
+
+        todoEl.innerText = todoText 
+
+        todoUL.appendChild(todoEl)
+        
+        //clear the form
+        input.value = ''
+    
     }
 }
