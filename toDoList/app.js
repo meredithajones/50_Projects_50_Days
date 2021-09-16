@@ -26,6 +26,14 @@ function addTodo(todo) {
         todoEl.addEventListener('click', () => 
         todoEl.classList.toggle('completed'));
 
+        // contextmenu is right click
+        todoEl.addEventListener('contextmenu', (e) => {
+            e.preventDefault()
+
+            todoEl.remove();
+
+        });
+
         todoUL.appendChild(todoEl)
         
         //clear the form
