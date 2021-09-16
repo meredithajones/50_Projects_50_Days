@@ -15,5 +15,10 @@ function addTodo(todo) {
         todoText = todo.text
     }
 
-    console.log(todoText)
+    if(todoText) {
+        const todoEl = document.createElement('li')
+        if(to && todo.completed) {
+            todoEl.classList.add('completed')
+        }
+    }
 }
