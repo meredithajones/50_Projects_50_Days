@@ -57,4 +57,14 @@ function addTodo(todo) {
 
 function updateLS() {
     todosEL = document.querySelectorAll('li')
+
+    const todos = []
+
+    todosEl.forEach(todoEL => {
+        todos.push({
+            text: todoEL.innerText, 
+            completed: todoEL.classList.contains 
+            ('completed')
+        })
+    })
 }
