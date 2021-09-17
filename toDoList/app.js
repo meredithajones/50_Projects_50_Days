@@ -2,6 +2,8 @@ const form = document.getElementById('form')
 const input = document.getElementById('input')   
 const todoUL = document.getElementById('todos')
 
+const todos = JSON.parse(localStorage.getItem('todos'))
+
 form.addEventListener('submit', (e)=> {
     e.preventDefault();
 
@@ -41,3 +43,7 @@ function addTodo(todo) {
     
     }
 }
+
+//setting up saving todos in local storage example: 
+// localStorage.setItem('name', JSON.stringify(obj)
+// JSON.parse(localStorage.getItem(obj))
