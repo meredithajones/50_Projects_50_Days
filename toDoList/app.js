@@ -56,15 +56,18 @@ function addTodo(todo) {
 // JSON.parse(localStorage.getItem(obj))
 
 function updateLS() {
-    todosEL = document.querySelectorAll('li')
+    todosEl = document.querySelectorAll('li')
 
     const todos = []
 
-    todosEl.forEach(todoEL => {
+    todosEl.forEach(todoEl => {
         todos.push({
-            text: todoEL.innerText, 
-            completed: todoEL.classList.contains 
-            ('completed')
+            text: todoEl.innerText,
+            completed: todoEl.classList.contains('completed')
         })
     })
+
+    localStorage.setItem('todos', JSON.stringify(todos))
 }
+
+
