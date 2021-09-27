@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Press Start 2P', sans-serif;
-    background-color: #C7753D;
+    background-color: #F6D887;
     overflow: hidden;
     text-align: center;
     height: 100vh;
@@ -15,10 +15,12 @@ body {
 }
 
 h1 {
-    color: #6F9EAF;
-    margin: 15px, 20px;
-    background-color: #A9294F;
+    line-height: 1.4;
+}
 
+.headline {
+    color: #6F9EAF;
+    padding: 20px;
 }
 
 .btn {
@@ -48,6 +50,33 @@ h1 {
 
 .screen.up {
     margin-top: -100vh;
+}
+
+.insects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+}
+
+.choose-insect-btn:hover {
+    background-color: rgb(241, 241, 232);
+    color: #6F9EAF;
+}
+
+.insects-list li {
+    margin: 10px;
 }
 
 .choose-insect-btn img {
