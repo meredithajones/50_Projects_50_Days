@@ -1,10 +1,10 @@
-const screens = document.querySelectorAll(".screen");
-const choose_insect_btns = document.querySelectorAll(".choose-insect-btn");
-const game_container = document.getElementById("game-container");
-const start_btn = document.getElementById("start-btn");
-const timeEL = document.getElementById("time");
-const scoreEL = document.getElementById("score");
-const message = document.getElementById("message");
+const screens = document.querySelectorAll('.screen');
+const choose_insect_btns = document.querySelectorAll('.choose-insect-btn');
+const start_btn = document.getElementById('start-btn')
+const game_container = document.getElementById('game-container')
+const timeEl = document.getElementById('time')
+const scoreEl = document.getElementById('score')
+const message = document.getElementById('message')
 let seconds = 0;
 let score = 0;
 let selected_insect = {};
@@ -14,11 +14,11 @@ start_btn.addEventListener("click", () => screens[0].classList.add("up"));
 // Selecting insect on click, assigning it an image and adding a class of 'up' to move screen up
 choose_insect_btns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const img = btn.querySelector("img");
-    const src = img.getAttribute("src");
-    const alt = img.getAttribute("alt");
+    const img = btn.querySelector('img');
+    const src = img.getAttribute('src');
+    const alt = img.getAttribute('alt');
     selected_insect = { src, alt };
-    screens[1].classlist.add("up");
+    screens[1].classlist.add('up');
     setTimeout(createInsect, 1000);
     startGame();
   });
@@ -49,3 +49,6 @@ function getRandomLocation() {
   return { x, y };
 }
 
+function catchInsect() {
+    console.log(123)
+}
