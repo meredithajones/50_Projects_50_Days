@@ -24,7 +24,7 @@ choose_insect_btns.forEach((btn) => {
   });
 });
 
-// Inserting insect into the DOM
+// Inserting insect into the DOM at a random location & rotation
 function createInsect() {
   const insect = document.createElement("div");
   insect.classList.add("insect");
@@ -32,7 +32,12 @@ function createInsect() {
   insect.style.top = `${y}px`;
   insect.style.left = `${x}px`;
   insect.innerHTML = `<img src=" ${selected_insect.src}" alt=
-  ${selected_insect.alt}" />`;
+  ${selected_insect.alt}" style="transform: rotate(${Math.random
+    () *360}deg)" />`;
+
+    insect.addEventListener('click', catchInsect)
+
+    game_container.appendChild(insect)
 }
 
 // Creating random insect location based on window height & width
@@ -43,3 +48,4 @@ function getRandomLocation() {
   const y = Math.random() * (height - 200) + 100;
   return { x, y };
 }
+
