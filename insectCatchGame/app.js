@@ -24,6 +24,9 @@ choose_insect_btns.forEach(btn => {
     })
 })
 
+function startGame() {
+    setInterval(increaseTime, 1000)
+}
 
 // Inserting insect into the DOM at a random location & rotation
 function createInsect() {
