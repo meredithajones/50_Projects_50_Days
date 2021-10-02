@@ -28,11 +28,14 @@ function startGame() {
   setInterval(increaseTime, 1000);
 }
 
+// Using a terinary to calculate minutes and seconds
 function increaseTime() {
   let m = Math.floor(seconds / 60);
   let s = seconds % 60;
   m = m < 10 ? `0${m}` : m;
   s = s < 10 ? `0${s}` : s;
+  timeEl.innerHTML = `Time: ${m}:${s}`;
+  seconds++;
 }
 
 // Inserting insect into the DOM at a random location & rotation
