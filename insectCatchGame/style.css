@@ -16,6 +16,11 @@ body {
 
 h1 {
     line-height: 1.4;
+    font-size: 57px;
+}
+
+h1 #insect_icon {
+    padding-bottom: 15px;
 }
 
 .headline {
@@ -27,6 +32,7 @@ h1 {
     border: 0;
     padding: 20px;
     font-family: inherit;
+    font-size: 20px;
     cursor: pointer;
     background-color: #F6D887;
 }
