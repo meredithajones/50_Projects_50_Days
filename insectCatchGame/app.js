@@ -65,11 +65,15 @@ function getRandomLocation() {
 }
 
 function catchInsect() {
-  increaseScore()
+  increaseScore();
+}
+
+function addInsects() {
+  setTimeout(createInsect, 1000);
+  setTimeout(createInsect, 1500);
 }
 
 function increaseScore() {
-    score++
-    scoreEl.innerHTML = `Score ${score}`
+  score++;
+  scoreEl.innerHTML = `Score ${score}`;
 }
-
