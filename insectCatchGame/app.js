@@ -67,9 +67,12 @@ function getRandomLocation() {
 function catchInsect() {
   increaseScore();
   this.classList.add('caught');
-  setTimeout();
+//   adding setTimeout to delay insect being removed by 2 seconds
+  setTimeout(() => this.remove(), 2000);
+  addInsects();
 }
 
+// Adding insects to the dom at 1 second and 1.5 second intervals
 function addInsects() {
   setTimeout(createInsect, 1000);
   setTimeout(createInsect, 1500);
