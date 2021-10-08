@@ -32,4 +32,14 @@ body {
     top: 20px;
     letter-spacing: 1px;
     box-shadow: 0 3px rgba(191, 191, 191, 0.7);
+    z-index: 100;
+}
+
+.magic:focus {
+    outline: none;
+}
+
+.magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
 }
