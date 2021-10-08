@@ -43,3 +43,16 @@ body {
     box-shadow: none;
     transform: translateY(2px);
 }
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+.box {
+    background: yellow;
+    height: 125px;
+    width: 125px;
+}
