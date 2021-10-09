@@ -59,7 +59,11 @@ body {
 }
 
 .box {
-    background: yellow;
+    background-image: url('https://media2.giphy.com/media/WiXMlla4ZFR8Q/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-size: cover;
+    position: relative;
     height: 125px;
     width: 125px;
 }
