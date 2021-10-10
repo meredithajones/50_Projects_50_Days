@@ -51,11 +51,16 @@ body {
     height: 500px;
     width: 500px;
     position: relative;
+    transition: .4s ease;
 }
 
 .boxes.big {
     width: 600px;
     height: 600px;
+}
+
+.boxes.big .box {
+    transform: rotateZ('360deg');
 }
 
 .box {
@@ -64,6 +69,7 @@ body {
     background-size: 500px 500px;
     background-size: cover;
     position: relative;
+    transition: .4s ease;
     height: 125px;
     width: 125px;
 }
