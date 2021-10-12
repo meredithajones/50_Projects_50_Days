@@ -47,6 +47,7 @@ body {
 .boxes {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 75px;
     justify-content: space-around;
     height: 500px;
     width: 500px;
@@ -60,7 +61,7 @@ body {
 }
 
 .boxes.big .box {
-    transform: rotateZ('360deg');
+    transform: rotateZ(360deg);
 }
 
 .box {
