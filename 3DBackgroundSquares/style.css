@@ -73,3 +73,13 @@ body {
     height: 125px;
     width: 125px;
 }
+
+.box::after {
+    content: '';
+    background-color: #f6e58d;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+}
