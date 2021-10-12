@@ -8,10 +8,10 @@ function createBoxes() {
             const box = document.createElement('div');
             box.classList.add('box');
             // Using a template literal to position boxes
-            box.style.backgroundPosition = `${-j * 125} ${-i * 125}`
+            box.style.backgroundPosition = `${-j * 125px} ${-i * 125px}`
             boxesContainer.appendChild(box)
         }
     }
 }
 
-createBoxes();
+createBoxes()
